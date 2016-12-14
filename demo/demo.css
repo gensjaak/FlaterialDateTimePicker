@@ -4,6 +4,15 @@ body {
 	background-color: #FAFAFA;
 }
 
+body * {
+	display: none;
+}
+
+body #flaterialDatePicker,
+body #flaterialDatePicker * {
+	display: block;
+}
+
 header#header {
 	overflow: hidden;
 	left: 0;

@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"pad",
+				"padding"
+			],
+			[
+				"fdp-day",
+				"fdp-dayInt\t(demo.html)"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
 				"po",
 				"popup"
 			],
@@ -90,10 +102,6 @@
 			[
 				"al",
 				"alt\tAttr"
-			],
-			[
-				"pad",
-				"padding-top"
 			],
 			[
 				"posi",
@@ -506,14 +514,6 @@
 			[
 				"ngcon",
 				"ng-controller\tAngularJS"
-			],
-			[
-				"col-",
-				"col-lg-3"
-			],
-			[
-				"di",
-				"display"
 			]
 		]
 	},
@@ -528,16 +528,24 @@
 	"command_palette":
 	{
 		"height": 354.0,
-		"last_filter": "add ",
+		"last_filter": "add",
 		"selected_items":
 		[
 			[
-				"add ",
+				"add",
 				"Project: Add Folder"
 			],
 			[
 				"css",
 				"Set Syntax: CSS"
+			],
+			[
+				"gitcom",
+				"GitGutter: Compare Against Commit"
+			],
+			[
+				"add ",
+				"Project: Add Folder"
 			],
 			[
 				"wo",
@@ -550,10 +558,6 @@
 			[
 				"dis",
 				"Package Control: Disable Package"
-			],
-			[
-				"add",
-				"Project: Add Folder"
 			],
 			[
 				"ena",
@@ -578,10 +582,6 @@
 			[
 				"ins",
 				"Package Control: Install Package"
-			],
-			[
-				"gitcom",
-				"GitGutter: Compare Against Commit"
 			],
 			[
 				"gitco",
@@ -834,10 +834,16 @@
 	},
 	"expanded_folders":
 	[
-		"/E/Projects/My templates/DatePicker"
+		"/E/Projects/My templates/DateTimePicker"
 	],
 	"file_history":
 	[
+		"/E/Projects/My templates/DateTimePicker/demo/demo.html",
+		"/E/Projects/My templates/DateTimePicker/dists/flaterial.datepicker.min.css",
+		"/E/Projects/My templates/DatePicker/demo/demo.css",
+		"/E/Projects/My templates/DatePicker/dists/flaterial.datepicker.min.css",
+		"/E/Projects/My templates/DatePicker/demo/demo.js",
+		"/E/Projects/My templates/DatePicker/dists/flaterial.datepicker.min.js",
 		"/E/Projects/LomeJS/jQuery CodeLab/server/server.js",
 		"/E/Projects/My templates/Popups/demo/jquery-3.1.1.min.js",
 		"/E/Projects/My templates/Popups/dists/flaterial.popups.min.css",
@@ -959,13 +965,7 @@
 		"/E/Tools/How to use material theme ST3",
 		"/E/Projects/ahoea/web/assets/libs/angular/angular-route.js",
 		"/E/Projects/ahoea/web/views/confidentiel/confidentielCtrl.js",
-		"/E/Projects/ahoea/web/views/footer/footerCtrl.js",
-		"/E/Projects/ahoea/web/views/header/headerCtrl.js",
-		"/E/Projects/ahoea/web/views/searchEngine/searchEngineCtrl.js",
-		"/E/Projects/geekship/geekship.web/app/app.services.js",
-		"/E/Projects/geekship/geekship.web/app/app.main.js",
-		"/E/Projects/geekship/geekship.web/app/app.components.js",
-		"/E/Projects/geekship/geekship.web/app/app.constants.js"
+		"/E/Projects/ahoea/web/views/footer/footerCtrl.js"
 	],
 	"find":
 	{
@@ -984,6 +984,57 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"formattedDate",
+			"month",
+			"mer",
+			"dayStr",
+			"mer",
+			"initial",
+			"flex",
+			"span",
+			"mer",
+			"part1",
+			"dayInt",
+			"month",
+			"fdp",
+			"mer",
+			"14",
+			"dim",
+			"sam",
+			"ven",
+			"jeu",
+			"mer",
+			"mar",
+			"lun",
+			"jeu",
+			"dim",
+			"sam",
+			"lun",
+			"mar",
+			"jeu",
+			"Mer",
+			"right",
+			"00bcd4",
+			"right",
+			"LIght",
+			"rmp",
+			"Décembre",
+			"month",
+			"Décembre",
+			"14",
+			"dayInt",
+			"Jeu",
+			"2016",
+			"607d8b",
+			"red",
+			"flaterialDatePicker",
+			"class",
+			"flaterialDatePicker",
+			"argument",
+			"FlaterialDatePicker",
+			"FlaterialPopups",
+			"DatePicker",
+			"Popups",
 			"autoCloseDelay",
 			"this",
 			"popup",
@@ -1060,58 +1111,7 @@
 			"infoDerro",
 			"PopupsGroup",
 			"PopupsGroup_1",
-			"PopupsGroup",
-			"config",
-			"PopupsGroup",
-			"false",
-			"flaterialGroup",
-			"$elts",
-			"opts",
-			"opts.",
-			"opts",
-			"opts.",
-			"opts",
-			"opts.",
-			"show",
-			"argument",
-			"config",
-			"opts",
-			"Popup",
-			"FlaterialPopups",
-			"defaultOpts",
-			"false",
-			"isConfigured",
-			"Flaterial",
-			"Popup",
-			"FlaterialPopups",
-			"argument",
-			"PopupsGroup",
-			"F.popup.config({",
-			"top",
-			"false",
-			"warning",
-			"false",
-			"2000",
-			"true",
-			"false",
-			"hasBackdrop",
-			"false",
-			"error",
-			"false",
-			"true",
-			"success",
-			"info",
-			"replace",
-			"on",
-			"success",
-			"info",
-			"true",
-			"false",
-			"argument",
-			"  (",
-			"false",
-			"true",
-			"false"
+			"PopupsGroup"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1187,7 +1187,7 @@
 		"height": 284.0
 	},
 	"pinned_build_system": "",
-	"project": "flaterial-datepicker.sublime-project",
+	"project": "flaterial-datetimepicker-project.sublime-project",
 	"replace":
 	{
 		"height": 50.0
@@ -1199,6 +1199,18 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"demo",
+				"demo\\demo.css"
+			],
+			[
+				"dem",
+				"demo\\demo.css"
+			],
+			[
+				"flaet",
+				"dists\\flaterial.datepicker.min.css"
+			],
 			[
 				"jq",
 				"demo\\jquery-3.1.1.min.js"
@@ -1698,18 +1710,6 @@
 			[
 				"app/app.routes.js",
 				"geekship.web\\app\\app.routes.js"
-			],
-			[
-				"app/app.modules.js",
-				"geekship.web\\app\\app.modules.js"
-			],
-			[
-				"app/app.main.js",
-				"geekship.web\\app\\app.main.js"
-			],
-			[
-				"arti/",
-				"geekship.web\\php\\article\\index.php"
 			]
 		],
 		"width": 0.0

@@ -1,0 +1,125 @@
+@font-face {
+	font-family: 'Light';
+	src: url('fonts/Roboto-Light.ttf') format('ttf'),
+	url('fonts/Roboto-Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Thin';
+	src: url('fonts/Roboto-Thin.ttf') format('ttf'),
+	url('fonts/Roboto-Thin.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Regular';
+	src: url('fonts/Roboto-Regular.ttf') format('ttf'),
+	url('fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Bold';
+	src: url('fonts/Roboto-Bold.ttf') format('ttf'),
+	url('fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+.f-btn {
+	text-decoration: none;
+	text-transform: lowercase;
+	font-variant: small-caps;
+	font-size: 125%;
+	font-family: Bold;
+	letter-spacing: -0.3px;
+	padding: 4px 15px 8px 13px;
+	height: initial;
+	width: initial;
+	color: unset;
+	border-radius: 2px;
+	text-align: center;
+}
+
+.f-btn.f-default {
+	background: transparent;
+	color: rgba(0,0,0,0.25);
+}
+
+.f-btn.f-primary {
+	background: transparent;
+	transition: background .05s ease-out 0s;
+}
+
+.rmp {
+	padding: 0;
+	margin: 0;
+}
+
+section#flaterialDatePicker {
+	position: fixed;
+	left: 50px;
+	top: 100px;
+	width: 400px;
+	height: 350px;
+	z-index: 9999;
+	background: #FFF;
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,.13);
+	border: none;
+	overflow: hidden;
+}
+
+section#flaterialDatePicker:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100px;
+	background: #00BCD4;
+	z-index: 1;
+	/* transform: rotate3d(1,1,1,-15deg) translateX(-40px) translateY(-40px); */
+}
+
+section#flaterialDatePicker header {
+	width: 100%;
+	height: 100px;
+	font-family: Regular;
+	color: #FFF;
+}
+
+section#flaterialDatePicker header .part1,
+section#flaterialDatePicker header .part2 {
+	display: block;
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	top: 0;
+	padding: 15px;
+}
+
+section#flaterialDatePicker header .part2 .fdp-suffixe,
+section#flaterialDatePicker header .part1 .fdp-dayStr {
+	text-transform: uppercase;
+	font-size: 150%;
+	font-family: Light;
+	text-align: center;
+	line-height: 1;
+}
+
+section#flaterialDatePicker header .part1 .fdp-dayInt {
+	text-align: center;
+	font-size: 300%;
+	font-family: Bold;
+	line-height: 1;
+}
+
+section#flaterialDatePicker header .part2 {
+	left: unset;
+	right: 0;
+}
+
+section#flaterialDatePicker header .part2 * {
+	display: inline-block;
+}
+
+section#flaterialDatePicker header .part2 .fdp-suffixe {
+	font-size: 100%;
+	font-family: Regular;
+}
