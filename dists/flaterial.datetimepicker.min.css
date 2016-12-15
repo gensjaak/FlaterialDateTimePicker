@@ -17,6 +17,12 @@
 }
 
 @font-face {
+	font-family: 'Black';
+	src: url('fonts/Roboto-Black.ttf') format('ttf'),
+	url('fonts/Roboto-Black.ttf') format('truetype');
+}
+
+@font-face {
 	font-family: 'Bold';
 	src: url('fonts/Roboto-Bold.ttf') format('ttf'),
 	url('fonts/Roboto-Bold.ttf') format('truetype');
@@ -24,27 +30,42 @@
 
 .f-btn {
 	text-decoration: none;
-	text-transform: lowercase;
-	font-variant: small-caps;
-	font-size: 125%;
-	font-family: Bold;
-	letter-spacing: -0.3px;
-	padding: 4px 15px 8px 13px;
+	text-transform: uppercase;
+	font-size: 95%;
+	font-family: Black;
+	line-height: 1;
+	padding: 10px 15px;
 	height: initial;
 	width: initial;
-	color: unset;
+	color: #000;
 	border-radius: 2px;
 	text-align: center;
+	margin: 5px;
 }
-
+.button-bar {
+	height: 60px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.button-bar .f-btn {
+	float: right;
+	position: relative;
+	top: 8px;
+}
+.button-bar .f-btn.f-negative {
+	margin-right: 0;
+	opacity: .2;
+}
+.button-bar .f-btn.f-positive {
+	margin-right: 10px;
+	margin-left: 0;
+	opacity: 1;
+}
 .f-btn.f-default {
 	background: transparent;
-	color: rgba(0,0,0,0.25);
-}
-
-.f-btn.f-primary {
-	background: transparent;
-	transition: background .05s ease-out 0s;
+	color: #607D8B;
 }
 
 .rmp {
@@ -52,12 +73,12 @@
 	margin: 0;
 }
 
-section#flaterialDatePicker {
+#flaterialDateTimePicker {
 	position: fixed;
 	left: 50px;
 	top: 100px;
-	width: 400px;
-	height: 350px;
+	width: 430px;
+	height: 530px;
 	z-index: 9999;
 	background: #FFF;
 	box-shadow: 0 1px 3px 0 rgba(0,0,0,.13);
@@ -65,27 +86,17 @@ section#flaterialDatePicker {
 	overflow: hidden;
 }
 
-section#flaterialDatePicker:before {
-	content: '';
-	position: absolute;
-	left: 0;
-	right: 0;
-	width: 100%;
-	height: 100px;
-	background: #00BCD4;
-	z-index: 1;
-	/* transform: rotate3d(1,1,1,-15deg) translateX(-40px) translateY(-40px); */
-}
-
-section#flaterialDatePicker header {
+#flaterialDateTimePicker header {
 	width: 100%;
 	height: 100px;
 	font-family: Regular;
 	color: #FFF;
+	background: #607D8B;
+	overflow: hidden;
 }
 
-section#flaterialDatePicker header .part1,
-section#flaterialDatePicker header .part2 {
+#flaterialDateTimePicker header .part1,
+#flaterialDateTimePicker header .part2 {
 	display: block;
 	position: absolute;
 	z-index: 2;
@@ -94,32 +105,166 @@ section#flaterialDatePicker header .part2 {
 	padding: 15px;
 }
 
-section#flaterialDatePicker header .part2 .fdp-suffixe,
-section#flaterialDatePicker header .part1 .fdp-dayStr {
+#flaterialDateTimePicker header .part2 .fdp-suffixe,
+#flaterialDateTimePicker header .part1 .fdp-dayStr {
 	text-transform: uppercase;
 	font-size: 150%;
 	font-family: Light;
 	text-align: center;
 	line-height: 1;
+	display: block;
 }
 
-section#flaterialDatePicker header .part1 .fdp-dayInt {
+#flaterialDateTimePicker header .part1 .fdp-dayInt {
 	text-align: center;
 	font-size: 300%;
 	font-family: Bold;
 	line-height: 1;
 }
 
-section#flaterialDatePicker header .part2 {
+#flaterialDateTimePicker header .part2 {
 	left: unset;
 	right: 0;
 }
 
-section#flaterialDatePicker header .part2 * {
+#flaterialDateTimePicker header .part2 * {
 	display: inline-block;
 }
 
-section#flaterialDatePicker header .part2 .fdp-suffixe {
+#flaterialDateTimePicker header .part2 .fdp-suffixe {
 	font-size: 100%;
 	font-family: Regular;
+}
+
+#flaterialDateTimePicker header .fdp-time {
+	font-size: 200%;
+	text-align: right;
+	width: 100%;
+	font-family: Light;
+}
+
+#flaterialDateTimePicker .content {
+	width: 100%;
+	height: 350px;
+	overflow: hidden;
+	position: relative;
+}
+
+.calendar {
+	list-style-type: none;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+.calendar .calendar-header {
+	height: 50px;
+	width: 100%;
+	background: #78909C;
+	transform: translate3d(0,0,0);
+	transition: all .15s ease-out 0s;
+}
+.calendar ul.calendar-items-row {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: space-around;
+}
+.calendar li.calendar-item {
+	align-self: center;
+	width: 100%;
+	height: 100%;
+	display: inline-flex;
+	justify-content: center;
+}
+.calendar li.calendar-item * {
+	align-self: center;
+	text-transform: uppercase;
+	font-size: 85%;
+	line-height: 1;
+	letter-spacing: -.5px;
+	color: #FFF;
+	opacity: .5;
+}
+.calendar li.calendar-item span {
+	font-family: Bold;
+}
+.calendar .calendar-body {
+	width: 100%;
+	height: initial;
+	background: transparent;
+	transform: translate3d(0,0,0);
+}
+.calendar .calendar-body .calendar-items-row {
+	height: 50px;
+}
+.calendar .calendar-body li.calendar-item.calendar-item-nextMonth,
+.calendar .calendar-body li.calendar-item.calendar-item-prevMonth {
+	opacity: .25;
+	cursor: default !important;
+}
+.calendar .calendar-body li.calendar-item {
+	cursor: pointer;
+	color: rgba(0,0,0,.666);
+	transition: all .15s ease-out 0s;
+}
+.calendar .calendar-body li.calendar-item.active {
+	color: rgba(0,0,0,1);
+	background: rgba(0,0,0,0.06);
+	transition: all .15s ease-out 0s;
+}
+.calendar .calendar-header li.calendar-item.active * {
+	opacity: .9;
+}
+.calendar .calendar-body li.calendar-item * {
+	color: inherit;
+}
+.calendar .calendar-body .calendar-items-row {
+	visibility: hidden;
+	opacity: 0;
+	transition: all .15s ease-out 0s;
+}
+.calendar.calendar-years .calendar-body .calendar-years-row.calendar-items-row,
+.calendar.calendar-months .calendar-body .calendar-months-row.calendar-items-row,
+.calendar.calendar-weeks .calendar-body .calendar-week.calendar-items-row {
+	visibility: visible;
+	opacity: 1;
+	transition: all .15s ease-out 0s;
+}
+.calendar.calendar-years .calendar-header,
+.calendar.calendar-months .calendar-header {
+	transform: translate3d(0,-100%,0);
+	transition: all .15s ease-out 0s;
+}
+.calendar.calendar-years .calendar-body,
+.calendar.calendar-months .calendar-body {
+	height: 100%;
+	transform: translate3d(0,-50px,0);
+	transition: all .15s ease-out 0s;
+}
+.calendar.calendar-months .calendar-body .calendar-items-row.calendar-months-row {
+	height: 33.333333333333336%;
+}
+.calendar.calendar-months .calendar-body .calendar-items-row.calendar-months-row * {
+	font-size: 95%;
+}
+.calendar.calendar-years .calendar-body .calendar-items-row.calendar-years-row {
+	height: 25%;
+}
+.calendar.calendar-years .calendar-body .calendar-items-row.calendar-years-row * {
+	font-size: 95%;
+}
+.calendar.calendar-years .calendar-body .calendar-items-row.calendar-years-row i {
+	font-size: 150%;
+	opacity: 1;
+}
+
+.calendar.calendar-years .calendar-body .calendar-item[calendar-prev-quartOfCentury] {
+	border-left: 3px solid #607D8B;
+}
+.calendar.calendar-years .calendar-body .calendar-item[calendar-next-quartOfCentury] {
+	border-right: 3px solid #607D8B;
 }
