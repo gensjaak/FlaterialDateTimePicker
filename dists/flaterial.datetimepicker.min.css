@@ -65,7 +65,7 @@
 }
 .f-btn.f-default {
 	background: transparent;
-	color: #607D8B;
+	color: #009688;
 }
 
 .rmp {
@@ -91,7 +91,7 @@
 	height: 100px;
 	font-family: Regular;
 	color: #FFF;
-	background: #607D8B;
+	background: #009688;
 	overflow: hidden;
 }
 
@@ -193,7 +193,6 @@
 	font-family: Bold;
 }
 .calendar .calendar-body {
-	width: 100%;
 	height: initial;
 	background: transparent;
 	transform: translate3d(0,0,0);
@@ -208,12 +207,11 @@
 }
 .calendar .calendar-body li.calendar-item {
 	cursor: pointer;
-	color: rgba(0,0,0,.666);
+	color: #000;
 	transition: all .15s ease-out 0s;
 }
 .calendar .calendar-body li.calendar-item.active {
-	color: rgba(0,0,0,1);
-	background: rgba(0,0,0,0.06);
+	background: rgba(0,0,0,0.1);
 	transition: all .15s ease-out 0s;
 }
 .calendar .calendar-header li.calendar-item.active * {
@@ -222,16 +220,21 @@
 .calendar .calendar-body li.calendar-item * {
 	color: inherit;
 }
-.calendar .calendar-body .calendar-items-row {
+.calendar .calendar-body.calendar-yearsContainer,
+.calendar .calendar-body.calendar-monthsContainer,
+.calendar .calendar-body.calendar-weeksContainer {
 	visibility: hidden;
 	opacity: 0;
+	display: none;
 	transition: all .15s ease-out 0s;
 }
-.calendar.calendar-years .calendar-body .calendar-years-row.calendar-items-row,
-.calendar.calendar-months .calendar-body .calendar-months-row.calendar-items-row,
-.calendar.calendar-weeks .calendar-body .calendar-week.calendar-items-row {
+.calendar.calendar-years .calendar-body.calendar-yearsContainer,
+.calendar.calendar-months .calendar-body.calendar-monthsContainer,
+.calendar.calendar-weeks .calendar-body.calendar-weeksContainer {
 	visibility: visible;
 	opacity: 1;
+	height: 100%;
+	display: block;
 	transition: all .15s ease-out 0s;
 }
 .calendar.calendar-years .calendar-header,
@@ -242,7 +245,6 @@
 .calendar.calendar-years .calendar-body,
 .calendar.calendar-months .calendar-body {
 	height: 100%;
-	transform: translate3d(0,-50px,0);
 	transition: all .15s ease-out 0s;
 }
 .calendar.calendar-months .calendar-body .calendar-items-row.calendar-months-row {
@@ -261,10 +263,24 @@
 	font-size: 150%;
 	opacity: 1;
 }
-
-.calendar.calendar-years .calendar-body .calendar-item[calendar-prev-quartOfCentury] {
-	border-left: 3px solid #607D8B;
+.calendar.calendar-years .calendar-body .calendar-item[calendar-prev] {
+	border-left: 3px solid #009688;
 }
-.calendar.calendar-years .calendar-body .calendar-item[calendar-next-quartOfCentury] {
-	border-right: 3px solid #607D8B;
+.calendar.calendar-years .calendar-body .calendar-item[calendar-next] {
+	border-right: 3px solid #009688;
+}
+.calendar-slideContainer {
+	height: 100%;
+	width: 300%;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: relative;
+	left: -100%;
+	transform: translate3d(0,-50px,0);
+}
+.calendar-slideContainer > li {
+	width: 33.333333333333336%;
+	height: 100%;
+	float: left;
 }
