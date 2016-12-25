@@ -5,12 +5,6 @@
 }
 
 @font-face {
-	font-family: 'Thin';
-	src: url('fonts/Roboto-Thin.ttf') format('ttf'),
-	url('fonts/Roboto-Thin.ttf') format('truetype');
-}
-
-@font-face {
 	font-family: 'Regular';
 	src: url('fonts/Roboto-Regular.ttf') format('ttf'),
 	url('fonts/Roboto-Regular.ttf') format('truetype');
@@ -115,6 +109,12 @@
 	display: block;
 }
 
+#flaterialDateTimePicker header .part2 .fdp-suffixe .fdp-month,
+#flaterialDateTimePicker header .part2 .fdp-suffixe .fdp-year,
+#flaterialDateTimePicker header .part1 {
+	cursor: pointer;
+}
+
 #flaterialDateTimePicker header .part1 .fdp-dayInt {
 	text-align: center;
 	font-size: 300%;
@@ -161,7 +161,7 @@
 .calendar .calendar-header {
 	height: 50px;
 	width: 100%;
-	background: #78909C;
+	background: #26A69A;
 	transform: translate3d(0,0,0);
 	transition: all .15s ease-out 0s;
 }
@@ -210,15 +210,30 @@
 	color: #000;
 	transition: all .15s ease-out 0s;
 }
-.calendar .calendar-body li.calendar-item.active {
-	background: rgba(0,0,0,0.1);
+.calendar .calendar-body li.calendar-item:hover {
+	background: rgba(0,0,0,.03);
 	transition: all .15s ease-out 0s;
+}
+.calendar .calendar-body li.calendar-item.denied {
+	pointer-events: none !important;
+	cursor: not-allowed !important;
+}
+.calendar .calendar-body li.calendar-item.active {
+	background: rgba(0,0,0,0.06);
+	transition: all .15s ease-out 0s;
+}
+.calendar .calendar-body .calendar-items-row.calendar-week li.calendar-item.today {
+	background: #009688;
+	color: #FFF;
 }
 .calendar .calendar-header li.calendar-item.active * {
 	opacity: .9;
 }
 .calendar .calendar-body li.calendar-item * {
 	color: inherit;
+}
+.calendar .calendar-body.calendar-monthsContainer {
+	transform: translate3d(0, -50px, 0);
 }
 .calendar .calendar-body.calendar-yearsContainer,
 .calendar .calendar-body.calendar-monthsContainer,
@@ -237,6 +252,9 @@
 	display: block;
 	transition: all .15s ease-out 0s;
 }
+.calendar.calendar-weeks .calendar-body.calendar-weeksContainer {
+	height: 300px !important;
+}
 .calendar.calendar-years .calendar-header,
 .calendar.calendar-months .calendar-header {
 	transform: translate3d(0,-100%,0);
@@ -250,14 +268,12 @@
 .calendar.calendar-months .calendar-body .calendar-items-row.calendar-months-row {
 	height: 33.333333333333336%;
 }
+.calendar.calendar-years .calendar-body .calendar-items-row.calendar-years-row *,
 .calendar.calendar-months .calendar-body .calendar-items-row.calendar-months-row * {
 	font-size: 95%;
 }
 .calendar.calendar-years .calendar-body .calendar-items-row.calendar-years-row {
 	height: 25%;
-}
-.calendar.calendar-years .calendar-body .calendar-items-row.calendar-years-row * {
-	font-size: 95%;
 }
 .calendar.calendar-years .calendar-body .calendar-items-row.calendar-years-row i {
 	font-size: 150%;

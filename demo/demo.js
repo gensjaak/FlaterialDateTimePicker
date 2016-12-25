@@ -1,10 +1,10 @@
-var initKeysEvents = function () {
-	var $master = $('#flaterialDateTimePicker');
-	var $dayStr = $master.find('.dayStr'),
-		$dayInt = $master.find('.dayInt'),
-		$month = $master.find('.month'),
-		$year = $master.find('.year'),
-		$hours = $master.find('.hours'),
-		$hours = $master.find('.hours'),
-		$mins = $master.find('.mins');
-}();
+new FlaterialDateTimePicker(document.getElementById('dateInput'), {
+	minDate: null,
+	// minDate: "08-02-1996",
+	maxDate: null,
+	// maxDate: "12-10-2015",
+	currentDate: null,
+	date: true,
+	time: false,
+	format: "DD-MM-YYYY"
+});
