@@ -1,10 +1,11 @@
 new FlaterialDateTimePicker(document.getElementById('dateInput'), {
 	minDate: null,
-	// minDate: "08-02-1996",
+	// minDate: "10-10-2016",
 	maxDate: null,
-	// maxDate: "12-10-2015",
+	// maxDate: "30-12-2018",
+	// currentDate: "31-10-2016",
 	currentDate: null,
 	date: true,
 	time: false,
-	format: "DD-MM-YYYY"
+	format: "dddd DD MMMM YYYY - HH:mm"
 });

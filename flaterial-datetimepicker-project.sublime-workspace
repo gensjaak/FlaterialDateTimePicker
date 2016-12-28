@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"sta",
+				"startFromYear"
+			],
+			[
+				"sele",
+				"selectYear"
+			],
+			[
 				"stri",
 				"strict\t(flaterial.datetimepicker.min.js)"
 			],
@@ -82,10 +90,6 @@
 			[
 				"star",
 				"startFrom"
-			],
-			[
-				"sele",
-				"selectDate\t(bootstrap-material-datetimepicker.js)"
 			],
 			[
 				"selec",
@@ -510,29 +514,16 @@
 			[
 				"lf",
 				"left"
-			],
-			[
-				"sc",
-				"scaleY()"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "demo/demo.html",
-			"settings":
-			{
-				"buffer_size": 2066,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "dists/flaterial.datetimepicker.min.css",
 			"settings":
 			{
-				"buffer_size": 6618,
+				"buffer_size": 6457,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -541,7 +532,7 @@
 			"file": "dists/flaterial.datetimepicker.min.js",
 			"settings":
 			{
-				"buffer_size": 22339,
+				"buffer_size": 27085,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -550,7 +541,7 @@
 			"file": "demo/demo.js",
 			"settings":
 			{
-				"buffer_size": 180,
+				"buffer_size": 226,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -564,9 +555,21 @@
 	"command_palette":
 	{
 		"height": 354.0,
-		"last_filter": "jav",
+		"last_filter": "fold",
 		"selected_items":
 		[
+			[
+				"fold",
+				"Fold JS Functions"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
 			[
 				"jav",
 				"Set Syntax: JavaScript"
@@ -641,10 +644,6 @@
 			],
 			[
 				"remo",
-				"Package Control: Remove Package"
-			],
-			[
-				"remove",
 				"Package Control: Remove Package"
 			],
 			[
@@ -764,10 +763,6 @@
 				"Git: Diff Staged Files"
 			],
 			[
-				"insta",
-				"Package Control: Install Package"
-			],
-			[
 				"remov",
 				"Package Control: Remove Package"
 			],
@@ -875,6 +870,10 @@
 	],
 	"file_history":
 	[
+		"/C/Users/Phareal/AppData/Roaming/Sublime Text 3/Packages/User/foldfunctions.sublime-settings",
+		"/C/Users/Phareal/AppData/Roaming/Sublime Text 3/Packages/FoldJsFunctions/Default (Windows).sublime-keymap",
+		"/C/Users/Phareal/AppData/Roaming/Sublime Text 3/Packages/FoldJsFunctions/foldfunctions.sublime-settings",
+		"/E/Projects/My templates/DateTimePicker/demo/demo.html",
 		"/E/Projects/My templates/DateTimePicker/dists/moment.js",
 		"/E/Projects/My templates/Popups/dists/flaterial.popups.min.js",
 		"/E/Projects/My templates/Popups/dists/jquery.easing.1.3.js",
@@ -898,7 +897,6 @@
 		"/J/Outils/Design/Sur ma route/bootstrap-material-datetimepicker-gh-pages/bootstrap-material-datetimepicker-gh-pages/bootstrap-material-datetimepicker.js",
 		"/E/Projects/My templates/DateTimePicker/demo/demo.css",
 		"/E/Projects/My templates/Flaterial/assets/libs/bootstrap/css/bootstrap.css",
-		"/E/Projects/My templates/DateTimePicker/demo/demo.html",
 		"/E/Projects/My templates/DateTimePicker/dists/flaterial.datepicker.min.css",
 		"/E/Projects/My templates/DatePicker/demo/demo.css",
 		"/E/Projects/My templates/DatePicker/dists/flaterial.datepicker.min.css",
@@ -999,10 +997,7 @@
 		"/E/Projects/geekship/geekship/Scripts/04-geek_encodePrimaryKey.sql",
 		"/E/Projects/geekship/geekship.web/php/master/db.php",
 		"/E/Projects/geekship/geekship.web/php/a/index.php",
-		"/E/Projects/geekship/geekship.web/php/visite/index.php",
-		"/E/Projects/geekship/geekship.web/php/terme/index.php",
-		"/E/Projects/geekship/geekship.web/php/pinge/index.php",
-		"/E/Projects/geekship/geekship.web/php/server/index.php"
+		"/E/Projects/geekship/geekship.web/php/visite/index.php"
 	],
 	"find":
 	{
@@ -1172,53 +1167,24 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "demo/demo.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2066,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1192,
-								1192
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 21.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "dists/flaterial.datetimepicker.min.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6618,
+						"buffer_size": 6457,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4186,
-								4186
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1234,20 +1200,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "dists/flaterial.datetimepicker.min.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 22339,
+						"buffer_size": 27085,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								15624,
+								15624
 							]
 						],
 						"settings":
@@ -1256,27 +1222,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2929.0,
+						"translation.y": 2751.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 2,
 					"file": "demo/demo.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 180,
+						"buffer_size": 226,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								106,
+								106
 							]
 						],
 						"settings":

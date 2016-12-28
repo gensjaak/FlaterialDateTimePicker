@@ -243,6 +243,9 @@
 	display: none;
 	transition: all .15s ease-out 0s;
 }
+.calendar.calendar-years .calendar-body.calendar-yearsContainer {
+	transform: translate3d(0,-50px,0);
+}
 .calendar.calendar-years .calendar-body.calendar-yearsContainer,
 .calendar.calendar-months .calendar-body.calendar-monthsContainer,
 .calendar.calendar-weeks .calendar-body.calendar-weeksContainer {
@@ -284,19 +287,4 @@
 }
 .calendar.calendar-years .calendar-body .calendar-item[calendar-next] {
 	border-right: 3px solid #009688;
-}
-.calendar-slideContainer {
-	height: 100%;
-	width: 300%;
-	padding: 0;
-	margin: 0;
-	list-style: none;
-	position: relative;
-	left: -100%;
-	transform: translate3d(0,-50px,0);
-}
-.calendar-slideContainer > li {
-	width: 33.333333333333336%;
-	height: 100%;
-	float: left;
 }
