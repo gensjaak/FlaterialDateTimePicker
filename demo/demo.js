@@ -5,7 +5,8 @@ new FlaterialDateTimePicker(document.getElementById('dateInput'), {
 	// maxDate: "30-12-2018",
 	// currentDate: "31-10-2016",
 	currentDate: null,
+	currentTime: "13:35",
 	date: true,
-	time: false,
+	time: true,
 	format: "dddd DD MMMM YYYY - HH:mm"
 });
