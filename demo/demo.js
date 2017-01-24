@@ -1,4 +1,4 @@
-new FlaterialDateTimePicker(document.getElementById('dateInput'), {
+var myDTP = new FlaterialDateTimePicker(document.getElementById('dateInput'), {
 	minDate: null,
 	// minDate: "10-10-2016",
 	
@@ -13,7 +13,9 @@ new FlaterialDateTimePicker(document.getElementById('dateInput'), {
 	
 	date: true,
 
-	time: true,
+	time: false,
 	
 	format: "dddd DD MMMM YYYY - HH:mm"
 });
+
+console.error(myDTP);
